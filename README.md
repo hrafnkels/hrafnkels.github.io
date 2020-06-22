@@ -1,49 +1,42 @@
-# Open Ecard Generator - Serverless, non-expiring electronic greeting cards
+# Dev Landing Page
 
-This is a working prototype for a purely client-side javascript ecard generator. You can try it online [here](https://dohliam.github.io/ecards/) or download the repo and host it anywhere, including a local network (requires no internet or server access).
+Minimal landing page for developers.
 
-## Features
+Developers don't talk much. Their code does all the talking. So here's a minimal landing page for developers.
 
-* Mobile-friendly
-* No ads, spam, or other junk
-* Customized cards never expire
-* No need to send or store data on a server
-* Can be run locally or offline
-* Use your own images, colours, and text
-* Unicode-friendly
-* No need for email -- send link by instant message, text or however you want
+## Why? [![start with why](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)
 
-## Demo
+I wanted a dev landing page to showcase everything I do online and I wanted it to be minimal and right to the point rather beautiful and hefty. And I think most of the devs out there would want the same.
 
-[Open Ecard Generator Online Demo](https://hrafnkel.github.io/ecards/)
+So I sat down one night and created this **Dev Landing Page**. Feel free to fork, clone, play around and make this your own.
 
-## Usage
+## Themes
 
-The default ("create") page provides a simple interface to design your electronic greeting card. The message text, card image, background colour and pattern, and sender and receiver names can all be customized. Press the "Preview" button to see what your ecard will look like.
+Dev Landing Page comes in 9 **material themes**.
 
-While you are designing your card, a link will appear to the final card. You can share this link (which goes to the "receive" page) with anyone you would like to share the card with.
+![9 Material Themes](https://image.ibb.co/jJVKCn/dev_landing_page_themes.jpg)
 
-All of your customizations are encoded in the url, so the card contents will not expire or change as long as the site is up (and even if the site goes down, you can still retrieve your card by downloading the generator and opening the link locally with the same parameters.)
+If none of these themes fit within your taste, it's quite easy to customize and create your own too. 
 
-The card generation and retrieval process is done entirely locally, so none of the card contents is ever stored anywhere on any server.
+## GitHub Pages
 
-## To do
+GitHub makes it easy to create personal websites. Follow this link - [GitHub Pages](https://pages.github.com/) to know how or follow the steps below.
 
-* Change font and font colour
-* Add optional banner and banner text
-* Auto adjust text size for long messages
-* Show preview in modal window
-* Share button with preformatted link
-* Import/export card templates
-* Config file to store default icon/pattern locations, sender name etc
-* Interface translation
-* Audio?
+If you already have a GitHub profile (obviously)
 
-## Credits
+* Create a new repo with the name `{username}.github.io`
+* Clone/Fork this repo and copy the files to your newly created repo
+* Customize your name, links and everything else for your landing page
+* `git push`
 
-* Default card background patterns from [transparent-textures](https://github.com/mike-hearn/transparent-textures) by @mike-hearn
-* Default card images from the [elegant-circles](https://github.com/dohliam/elegant-circles) repo, original artwork by [Elegant Themes](http://www.elegantthemes.com/)
+Voila! Your site should be live at `https://{username}.github.io`
+
+Here's my **Dev Landing Page** - [Dinesh Pandiyan - portfolio v1](https://portfoliov1.dineshpandiyan.com)
+
+### Custom Domain
+
+If you want to make your new landing page available under a domain like `{username}.com` you can get started here - [Setting up a custom domain](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
 
 ## License
 
-MIT.
+MIT © Dinesh Pandiyan

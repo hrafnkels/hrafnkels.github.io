@@ -1,62 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <title>Hrafnkels Ecard Generator</title>
-    <meta content="">
-    <link rel="stylesheet" type="text/css" href="https://hrafnkels.github.io/dropin-minimal-css/vendor/picnic.min.css"/>
-    <link rel="stylesheet" type="text/css" href="card.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/create.js" type="text/javascript"></script>
-    <script src="js/jscolor.min.js" type="text/javascript"></script>
-  </head>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body onload="load_ready()">
+	<title>Hrafnkel | Awesome Dev</title>
 
-    <h1>Based on Open Ecard Generator</h1>
-    <div id="create">
-      <h2>Design card</h2>
-      <textarea id="message" rows=7 cols=20 placeholder="Write your message here." onchange="show_preview()" onkeyup="show_preview()"></textarea><br>
+	<link rel="icon" href="favicon.ico" type="image/png" />
 
-      <input type="text" id="recipient" size="25" placeholder="Recipient" onchange="show_preview()" onkeyup="show_preview()"><br>
-      <input type="text" id="sender" size="25" placeholder="Sender" onchange="show_preview()" onkeyup="show_preview()"><br>
-      <input type="text" id="image_url" size="25" placeholder="Image url" onchange="show_preview()" onkeyup="show_preview()"><br>
-      <div id="select_ic">&nbsp;</div>
-
-      <button
-          class="jscolor {valueElement:'chosen_value',value:'FFF',onFineChange:'setTextColor(this)'}"
-          style="border:1px solid black;margin-right:5px">
-          Pick card background color
-      </button>
-      HEX value: <span id="chosen_value">&nbsp;</span>
-      <script>
-        function setTextColor(picker) {
-          document.getElementById('card_container').style.backgroundColor = '#' + picker.toString();
-          show_preview();
-        }
-      </script>
-
-      <div id="select_bg">&nbsp;</div>
+	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/themes/indigo-white.css">
+	<!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/white-grey.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
+</head>
+<body>
+	<main>
+		<div class="intro">Hello, I'm Hrafnkel!</div>
+		<div class="tagline">All-Star Dev | Code Fanatic | Linux Hacker | Bleh</div>
+		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+		<div class="icons-social">
+			<a target="_blank" href="https://github.com/hrafnkels"><i class="fab fa-github"></i></a>
+			<a target="_blank" href="https://twitter.com/hrafnkels"><i class="fab fa-twitter"></i></a>
+			<a target="_blank" href="https://dev.to/hrafnkels"><i class="fab fa-dev"></i></a>
+			<a target="_blank" href="https://codepen.io"><i class="fab fa-codepen"></i></a>
     </div>
-
-    <button type="button" onclick="toggle_preview()">Toggle preview</button>
-
-    <div id="card_url">&nbsp;</div>
-
-    <br>
-    <div id="preview_container">
-      <h2>Preview card</h2>
-      <div id="card_container">
-        <div id="preview">
-          <center>
-            <img id="card_image"/><br>
-            <p id="message_preview">&nbsp;</p>
-          </center>
-        </div>
-      </div>
-    </div>
-    <footer>
-      Source <a href="https://github.com/hrafnkels/ecards">available on GitHub</a>.
-    </footer>
-  </body>
+	</main>
+</body>
 </html>
