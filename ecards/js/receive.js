@@ -60,7 +60,7 @@ function view_card(card_obj) {
   recipient.innerHTML = spacer + card_obj.r + ", ";
   document.title = card_obj.s + " sent you a card!";
 
-  bp = "https://raw.githubusercontent.com/mike-hearn/transparent-textures/master/patterns/" + card_obj.bp + ".png";
+  bp = "https://hrafnkels.github.io/ecards/extra/" + card_obj.bp + ".png";
   card.style.backgroundColor = card_obj.bc;
   card.style.backgroundImage = 'url("' + bp + '")';
 }
